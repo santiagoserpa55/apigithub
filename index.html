@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+   
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/themes.css">
+   <script defer src="index.js" type="module"></script>
+    
+   <title>Frontend Mentor GitHub user search app</title>
+</head>
+<body>
+    <main>
+        
+
+        <header class="header__container">
+            <h1>Frontend Mentor</h1>
+            <div class="theme__container">
+                <div class="light">
+                    <p>light</p>
+                    <div class="light">
+                        <img src="/assets/icon-sun.svg" alt="">
+                    </div>
+                </div>
+                <div class="dark">
+                    <p>dark</p>
+                    <img src="/assets/icon-moon.svg" alt="">
+                </div>
+            </div>
+        </header>
+
+        <section class="search__bar container">
+            <img src="assets/icon-search.svg" alt="icon-search">
+            <label for="search">
+                <input type="text" id="search" placeholder="Search GitHub username..."/>
+            </label>
+            <button type="button">Search</button>
+            <div class="error">No results</div>
+        </section>
+        <div class="main__container container">
+            <div class="desktop__container">
+
+                <div class="gitHub__user--profile">
+                    <div class="icon">
+                        <img id="icon" alt="user-profile"/>
+                    </div>
+                    <div class="user__info">
+                        <p class="name"></p><!--  -->
+                        <p class="username"></p>
+                        <p class="joined"></p>
+                    </div>
+                </div>
+
+                <div class="bio__container">
+                    <p class="bio"></p>
+                </div>
+                <div class="stats__container">
+                    <div class="stats">
+                        <div class="stats__header">Repos</div>
+                        <div class="stats__total repos"></div>
+                    </div>
+                    <div class="stats">
+                        <div class="stats__header">Followers</div>
+                        <div class="stats__total followers"></div>
+                    </div>
+                    <div class="stats">
+                       <div class="stats__header">Following</div>
+                       <div class="stats__total following"></div> 
+                    </div>
+                </div>
+
+                <div class="info__container">
+                    <div class="info info__location">
+                        <img src="assets/icon-location.svg" alt="icon-location"/>
+                        <span class="location"></span>
+                    </div>
+                    <div class="info info__website">
+                        <img src="assets/icon-website.svg" alt="icon-website"/>
+                        <a class="website" href="#"></a>
+                    </div>
+                    <div class="info info__twitter">
+                        <img src="assets/icon-twitter.svg" alt="icon-twitter"/>
+                        <a href="#" class="twitter"></a>
+                    </div>
+                    <div class="info info__company">
+                        <img src="assets/icon-company.svg" alt="icon-company">
+                        <a href="#" class="company"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
